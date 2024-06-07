@@ -48,6 +48,32 @@ display: inline-block;
 
 }
 
+#friends_img{
+
+width:75px ;
+float:left;
+margin: 8px;
+
+
+}
+
+#friends_bar{
+    background-color:white ;
+    min-height: 400px;
+    margin-top: 20px;
+    color: #aaa;
+    padding: 8px;
+
+
+}
+
+#friends{
+    clear:both;
+    font-size 12px;
+    font-weight: bold;
+    color: #405d9b;
+}
+
 
 
         </style>
@@ -71,7 +97,7 @@ MyBook &nbsp  &nbsp  <input type="text" id="search_box"  placeholder="search for
         </div>
         
         <!--cover area-->
-        <div style="width:800px; margin:auto; background-color:black; min-height: 400px;">
+        <div style="width:800px; margin:auto;  min-height: 400px;">
 
             <div style="background-color: white; text-align:center; color:#405d9b;">
             <img src="images/mountain.jpg" style="width:100%;" >
@@ -92,11 +118,59 @@ MyBook &nbsp  &nbsp  <input type="text" id="search_box"  placeholder="search for
 
 <div>
 
-
+<!--below cover area-->
 <div style="display:flex">
 
-       <div style="background-color:green; min-height:400px; flex:1;"></div>
-        <div style="background-color: grey; min-height:400px; flex:2.5;"></div>
+<!--friends area-->
+       <div  id="friends_bar"style=" min-height:400px; flex:1;">
+
+                <div>
+                    Friends<br>
+                    <div id="friends">
+                        <img id="friends_img" src="images/user1.jpg">
+                        <br>
+                        First User
+
+
+                    </div>
+
+
+                    <div id="friends">
+                        <img id="friends_img" src="images/user2.jpg">
+                        <br>
+                        First User
+
+
+                    </div>
+
+
+                    <div id="friends">
+                        <img id="friends_img" src="images/user3.jpg">
+                        <br>
+                        First User
+
+
+                    </div>
+
+
+                    <div id="friends">
+                        <img id="friends_img" src="images/user4.jpg">
+                        <br>
+                        First User
+
+
+                    </div>
+                </div>
+
+
+       </div>
+
+
+
+
+
+       <!--posts area-->
+        <div style= "min-height:400px; flex:2.5;"></div>
 
         </div>
         
