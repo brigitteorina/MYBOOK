@@ -70,8 +70,14 @@ MyBook &nbsp  &nbsp  <input type="text" id="search_box"  placeholder="search for
             <img id="profile_pic"  src="images/selfie.jpg" ><br>
             Brigitte Orina
 <br>
-            Timeline  About Friends Photos Settings
-            </div>
+           <div id="menu_buttons"> Timeline </div> 
+           <div id="menu_buttons"> About</div> 
+           <div id="menu_buttons">  Friends </div>
+           <div id="menu_buttons">  Photos</div> 
+           <div id="menu_buttons"> Settings</div>
+
+
+           </div>
 
 
 
