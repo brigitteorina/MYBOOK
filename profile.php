@@ -40,6 +40,14 @@ border: solid 2px white;
 
 }
 
+#menu_buttons{
+
+width:100px;
+margin: 2px;
+display: inline-block;
+
+}
+
 
 
         </style>
@@ -68,7 +76,9 @@ MyBook &nbsp  &nbsp  <input type="text" id="search_box"  placeholder="search for
             <div style="background-color: white; text-align:center; color:#405d9b;">
             <img src="images/mountain.jpg" style="width:100%;" >
             <img id="profile_pic"  src="images/selfie.jpg" ><br>
-            Brigitte Orina
+
+
+            <div style="font-size: 20px;">Brigitte Orina</div>
 <br>
            <div id="menu_buttons"> Timeline </div> 
            <div id="menu_buttons"> About</div> 
@@ -80,10 +90,13 @@ MyBook &nbsp  &nbsp  <input type="text" id="search_box"  placeholder="search for
            </div>
 
 
+<div>
 
 
+<div style="display:flex">
 
-
+       <div style="background-color:green; min-height:400px; flex:1;"></div>
+        <div style="background-color: grey; min-height:400px; flex:2.5;"></div>
 
         </div>
         
