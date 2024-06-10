@@ -76,6 +76,25 @@
             border-radius: 2px;
             width: 50px;
         }
+
+
+        #post-bar{
+
+margin-top: 20px;
+background-color: white;
+padding: 10px;
+
+        }
+
+
+        #post{
+
+padding: 4px;
+display: flex;
+font-size: 13px;
+margin-bottom: 20px;
+
+        }
     </style>
 </head>
 <body style="font-family: tahoma; background-color: #d0d8e4;">
@@ -134,6 +153,92 @@
                     <input id="post_button" type="submit" value="Post">
                     <br>
                 </div>
+
+                <!--posts-->
+                <div id="post-bar">
+
+
+                 <!--post 1-->
+
+                    <div id="post">
+
+                    <div>
+                        <img src="images/user1.jpg" style="width: 75px; margin-right:4px;">
+
+                    </div>
+
+                    <div>
+                        <div style="font-weight:bold; color:#405d9b;">Bob Builder</div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magni ipsum possimus, culpa placeat libero eos dignissimos hic quam provident aspernatur sed aliquid iure nam? Illum et magni officiis quod!
+                        <br><br>
+
+                       <a href=""> Like</a> .<a href="">Comment</a> . <span style="color:#999;">April 6 2024</span>
+
+                    </div>
+                        
+                    </div>
+
+                <!--post 2-->
+                                    <div id="post">
+
+                <div>
+                    <img src="images/user2.jpg" style="width: 75px; margin-right:4px;">
+
+                </div>
+
+                <div>
+                    <div style="font-weight:bold; color:#405d9b;">Ian Smith</div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magni ipsum possimus, culpa placeat libero eos dignissimos hic quam provident aspernatur sed aliquid iure nam? Illum et magni officiis quod!
+                    <br><br>
+
+                <a href=""> Like</a> .<a href="">Comment</a> . <span style="color:#999;">April 6 2024</span>
+
+                </div>
+                    
+                </div>
+                <!--post 3-->
+
+                <div id="post">
+
+                <div>
+                    <img src="images/user3.jpg" style="width: 75px; margin-right:4px;">
+
+                </div>
+
+                <div>
+                    <div style="font-weight:bold; color:#405d9b;">Joy Smiles</div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magni ipsum possimus, culpa placeat libero eos dignissimos hic quam provident aspernatur sed aliquid iure nam? Illum et magni officiis quod!
+                    <br><br>
+
+                <a href=""> Like</a> .<a href="">Comment</a> . <span style="color:#999;">April 6 2024</span>
+
+                </div>
+                    
+                </div>
+
+                <!-- post 4-->
+                <div id="post">
+
+                <div>
+                    <img src="images/user4.jpg" style="width: 75px; margin-right:4px;">
+
+                </div>
+
+                <div>
+                    <div style="font-weight:bold; color:#405d9b;">Innocent TYler</div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magni ipsum possimus, culpa placeat libero eos dignissimos hic quam provident aspernatur sed aliquid iure nam? Illum et magni officiis quod!
+                    <br><br>
+
+                <a href=""> Like</a> .<a href="">Comment</a> . <span style="color:#999;">April 6 2024</span>
+
+                </div>
+                    
+                </div>
+
+                    
+                </div>
+
+
             </div>
         </div>
     </div>
