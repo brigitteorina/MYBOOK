@@ -1,8 +1,23 @@
 <?php
+include("classes/connect.php");
+include("classes/signup.php");
+
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST)) {
-    echo "<pre>";
-    print_r($_POST);
-    echo "</pre>";
+
+    //instantiating the signup
+    $signup=new Signup();
+
+    //access the Sign up class functions
+    $result =$signup->evaluate($_POST);
+
+    echo $result;
+
+    
+
+    // echo "<pre>";
+    // print_r($_POST);
+    // echo "</pre>";
 }
 ?>
 

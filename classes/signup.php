@@ -38,19 +38,41 @@ class Signup
         $password = $data['password'];
 
          // Generate a URL string and a unique user ID
-        $url_string = $data['url_string'];
-        $user_id = $data['user_id'];
+        $url_string = strtolower($first_name) . '.' .strtolower($second_name);
+        $user_id = $this->create_userid();
 
 
          // Construct the SQL query to insert the new user into the database
         $query = "INSERT INTO users (user_id, first_name, second_name, email, password, gender, url_string) 
-                  VALUES ('$user_id', '$first_name', '$second_name', '$email', '$password', '$gender', '$url_string')";
+                  VALUES (?,?,?,?,?,?,?)";
                   
   // Create an instance of the Database class     
 $DB= new Database();
-$DB->save($query);
+$DB->save($query,[$user_id,$first_name,$second_name,$email,$password,$gender,$url_string]);
 
 
+    }
+
+
+//generate a random user id
+    private function create_userid()
+    {
+
+        //generate a random number of length 4 min and 19 max
+        $length =rand(4,19);
+        $number = "";
+
+        //loop through the random number
+        for($i=0; $i< $length; $i++){
+
+
+            //when the loop runs it should select a random number btwn 0 to 9
+            $new_rand=rand(0,9);
+
+            $number=$number . $new_rand;
+        }
+
+        return $number;
     }
 }
 
