@@ -44,7 +44,9 @@ class Signup
 
          // Construct the SQL query to insert the new user into the database
         $query = "INSERT INTO users (user_id, first_name, second_name, email, password, gender, url_string) 
-                  VALUES (?,?,?,?,?,?,?)";
+                   VALUES ('$user_id', '$first_name', '$second_name', '$email', '$password', '$gender', '$url_string')";
+
+          
                   
   // Create an instance of the Database class     
 $DB= new Database();

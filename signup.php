@@ -2,6 +2,11 @@
 include("classes/connect.php");
 include("classes/signup.php");
 
+$first_name="";
+$second_name="";
+$gender="";
+$email="";
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST)) {
 
     // Instantiate the Signup class
@@ -17,7 +22,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST)) {
         echo "</div>";
     }
 
+
     
+$first_name=$_POST['first_name'];
+$second_name=$_POST['second_name'];
+$gender=$_POST['gender'];
+$email=$_POST['email'];
+
 }
 ?>
 
@@ -105,17 +116,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST)) {
         Sign up to MyBook<br> <br>
 
         <form method="POST" action="">
-            <input type="text" id="text" placeholder="First Name" name="firstname"><br> <br>
-            <input type="text" id="text" placeholder="Last Name" name="last name"><br> <br>
+            <input value="<?php echo $first_name ?>" type="text" id="text" placeholder="First Name" name="first_name"><br> <br>
+            <input value="<?php echo $second_name ?>"  type="text" id="text" placeholder="Last Name" name="second_name"><br> <br>
             <span style="font-weight: normal;">Gender:</span><br>
             <select id="text" name="gender">
 
+
+                <option> <?php echo $gender ?></option>
                 <option>Male</option>
                 <option>Female</option>
             </select>
             <br><br>
 
-            <input type="text" id="text" placeholder="Email" name="email"><br> <br>
+            <input value="<?php echo $email ?>" type="text" id="text" placeholder="Email" name="email"><br> <br>
             <input type="password" id="text" placeholder="Password" name="password"><br> <br>
             <input type="password" id="text" placeholder=" Confirm Password" name="password2"><br> <br>
             <input type="Submit" id="button" value="SignUp"><br> <br>
