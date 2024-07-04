@@ -2,24 +2,25 @@
 include("classes/connect.php");
 include("classes/signup.php");
 
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST)) {
 
-    //instantiating the signup
-    $signup=new Signup();
+    // Instantiate the Signup class
+    $signup = new Signup();
 
-    //access the Sign up class functions
-    $result =$signup->evaluate($_POST);
+    // Access the Signup class functions
+    $result = $signup->evaluate($_POST);
 
-    echo $result;
+    if ($result != "") {
+        echo "<div style='text-align:center;font-size:12px;color:white;background-color:grey;'>";
+        echo "The following error has occurred:<br><br>";
+        echo $result;
+        echo "</div>";
+    }
 
     
-
-    // echo "<pre>";
-    // print_r($_POST);
-    // echo "</pre>";
 }
 ?>
+
 
 
 
